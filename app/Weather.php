@@ -9,7 +9,6 @@ class Weather
     private int $humidity;
     private float $temperatureFeelsLike;
     private float $windSpeed;
-    private string $weatherIcon;
 
     public function __construct(string $locationName, float $temperature, int $humidity, float $temperatureFeelsLike, float $windSpeed)
     {
