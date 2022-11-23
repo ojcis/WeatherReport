@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 use App\ApiClient;
 
-const API_KEY='cf60e647aafa33c963a3f5a489d1964b';
+const API_KEY='';
 
 $apiClient=new ApiClient(API_KEY);
 
