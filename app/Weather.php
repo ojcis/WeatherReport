@@ -11,14 +11,13 @@ class Weather
     private float $windSpeed;
     private string $weatherIcon;
 
-    public function __construct(string $locationName, float $temperature, int $humidity, float $temperatureFeelsLike, float $windSpeed, string $weatherIcon)
+    public function __construct(string $locationName, float $temperature, int $humidity, float $temperatureFeelsLike, float $windSpeed)
     {
         $this->locationName = $locationName;
         $this->temperature = $temperature;
         $this->humidity = $humidity;
         $this->temperatureFeelsLike = $temperatureFeelsLike;
         $this->windSpeed = $windSpeed;
-        $this->weatherIcon = $weatherIcon;
     }
 
     public function getHumidity(): int
@@ -39,11 +38,6 @@ class Weather
     public function getTemperatureFeelsLike(): float
     {
         return $this->temperatureFeelsLike;
-    }
-
-    public function getWeatherIcon(): string
-    {
-        return $this->weatherIcon;
     }
 
     public function getWindSpeed(): float
